@@ -9,5 +9,14 @@
             <li>{{ $comic -> type }}</li>
             <li>{{ $comic -> price }}</li>
         </ul>
+
+        {{-- Json --}}
+        {{-- <ul>
+            @foreach (json_decode($comic -> artists) as $artist )
+                <li>
+                    {{ $artist}}
+                </li>
+            @endforeach
+        </ul> --}}
     </div>
 @endsection
